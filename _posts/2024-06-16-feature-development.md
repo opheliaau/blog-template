@@ -28,3 +28,8 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 	<li>Only allow the player to select the game if the player owns the game. </li>
 	<li>If they don’t own any games, redirect them to the games shop.</li>
 </ol>|
+
+
+| Functional Requirements | Implementation |
+|--------|---------|
+|Allow host to select a game|<ol><li>Create a “Select Game” button under the game title.</li><li>Only allow the player to select the game if the player owns the game. </li><li>If they don’t own any games, redirect them to the games shop.</li></ol>|
