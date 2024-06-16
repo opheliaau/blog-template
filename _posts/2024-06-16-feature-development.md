@@ -33,3 +33,8 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 | Functional Requirements | Implementation |
 |--------|---------|
 |Allow host to select a game|<ul><li>item1</li><li>item2</li></ul>|
+
+<h3>Select a Game</h3>
+| Functional Requirements | Implementation |
+|--------|---------|
+|Allow host to select a game|Create a “Select Game” button under the game title. Only allow the player to select the game if the player owns the game. If they don’t own any games, redirect them to the games shop.|
