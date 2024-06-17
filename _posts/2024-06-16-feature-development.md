@@ -53,18 +53,21 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 <tbody>
 <tr>
 <td markdown="span">**Allow host to select a game**</td>
-<td markdown="span"><ul>
-	<li>Create a “Select Game” button under the game title.</li>
-	<li>Only allow the player to select the game if the player owns the game.</li>
-	<li>If they don’t own any games, redirect them to the games shop.</li>
-</ul></td>
+<td markdown="span">
+	<ul>
+		<li>Create a “Select Game” button under the game title.</li>
+		<li>Only allow the player to select the game if the player owns the game.</li>
+		<li>If they don’t own any games, redirect them to the games shop.</li>
+	</ul>
+</td>
 </tr>
 <tr>
 <td markdown="span">**Host must enter a name**</td>
-<td markdown="span"><ul>
-	<li>Select game button opens a popup that prompts a name input.</li>
-	<li>Only allow “Create Room” button to be clickable if the name input is at least 1 character long.</li>
-</ul>
+<td markdown="span">
+	<ol>
+		<li>Select game button opens a popup that prompts a name input.</li>
+		<li>Only allow “Create Room” button to be clickable if the name input is at least 1 character long.</li>
+	</ol>
 </td>
 </tr>
 </tbody>
