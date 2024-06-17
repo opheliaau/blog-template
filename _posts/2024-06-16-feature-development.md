@@ -23,11 +23,11 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 | Functional Requirements | Implementation |
 |--------|---------|
 |Allow host to select a game|
-<ol>
+<ul>
 	<li>Create a “Select Game” button under the game title.</li>
 	<li>Only allow the player to select the game if the player owns the game. </li>
 	<li>If they don’t own any games, redirect them to the games shop.</li>
-</ol>|
+</ul>|
 
 
 | Functional Requirements | Implementation |
@@ -46,18 +46,25 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 </colgroup>
 <thead>
 <tr class="header">
-<th>Field</th>
-<th>Description</th>
+<th>Functional Requirements</th>
+<th>Implementation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td markdown="span">First column **fields**</td>
-<td markdown="span">Some descriptive text. This is a markdown link to [Google](http://google.com). Or see [some link][mydoc_tags].</td>
+<td markdown="span">**Allow host to select a game**</td>
+<td markdown="span"><ul>
+	<li>Create a “Select Game” button under the game title.</li>
+	<li>Only allow the player to select the game if the player owns the game.</li>
+	<li>If they don’t own any games, redirect them to the games shop.</li>
+</ul></td>
 </tr>
 <tr>
-<td markdown="span">Second column **fields**</td>
-<td markdown="span">Some more descriptive text.
+<td markdown="span">**Host must enter a name**</td>
+<td markdown="span"><ul>
+	<li>Select game button opens a popup that prompts a name input.</li>
+	<li>Only allow “Create Room” button to be clickable if the name input is at least 1 character long.</li>
+</ul>
 </td>
 </tr>
 </tbody>
