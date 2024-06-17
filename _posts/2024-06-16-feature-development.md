@@ -46,19 +46,17 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 </colgroup>
 <thead>
 <tr class="header">
-<th>Functional Requirements</th>
-<th>Implementation</th>
+<th>Functional Requirement</th>
+<th>Implementation Component</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td markdown="span">**Allow host to select a game**</td>
 <td markdown="span">
-	<ul>
-		<li>Create a “Select Game” button under the game title.</li>
-		<li>Only allow the player to select the game if the player owns the game.</li>
-		<li>If they don’t own any games, redirect them to the games shop.</li>
-	</ul>
+		- Create a “Select Game” button under the game title.<br>
+		- Only allow the player to select the game if the player owns the game.<br>
+		- If they don’t own any games, redirect them to the games shop.<br>
 </td>
 </tr>
 <tr>
