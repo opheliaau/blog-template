@@ -54,7 +54,7 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 </thead>
 <tbody>
 <tr>
-<td markdown="span" rowspan="3">**Select a Game**</td>
+<td markdown="span" rowspan="3" style="vertical-align:top">**Select a Game**</td>
 <td markdown="span">Allow host to select a game</td>
 <td markdown="span">
 	- Create a “Select Game” button under the game title.<br>
@@ -77,8 +77,9 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 	- When “Create Room” is clicked, the user’s info (player name) is saved.<br>
 </td>
 </tr>
+
 <tr>
-<td markdown="span" rowspan="4">**View game lobby**</td>
+<td markdown="span" rowspan="4" style="vertical-align:top">**View game lobby**</td>
 <td markdown="span">Room has a unique code that allows others to join it</td>
 <td markdown="span">
 	- When the host clicks “Create Room”, a 5 digit code is randomly generated.<br>
@@ -108,5 +109,40 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 		- Any data references to players must use the unique game code<br>
 </td>
 </tr>
+
+<tr>
+<td markdown="span" rowspan="4" style="vertical-align:top">**Join a room**</td>
+<td markdown="span">Unique code allows a user to join a specific room</td>
+<td markdown="span">
+	- Create input for code and player name.<br>
+	- Only allow “Join Game” button to be clickable if the inputted code is 5 characters long.<br>
+</td>
+</tr>
+<tr>
+<td markdown="span">Cannot join a room that does not exist</td>
+<td markdown="span">
+	- Do not navigate to or create a game lobby if the code does not already exist.<br>
+	- Provide the user with an alert that the room code is not valid.<br>
+
+</td>
+</tr>
+<tr>
+<td markdown="span">Cannot join a room that is full</td>
+<td markdown="span">
+	- Do not navigate to a game lobby that is already has the required/max number of players.<br>
+	- Provide user with an alert that the room is full.<br>
+
+</td>
+</tr>
+<tr>
+<td markdown="span">Players must have a name</td>
+<td markdown="span">
+	- Only allow “Join Game” button to be clickable if the name input is at least 1 character long.<br>
+	- The user’s info (player name) is saved when they click on “Join Game” and associated to the specific game they joined.<br>
+
+</td>
+</tr>
+
+
 </tbody>
 </table>
