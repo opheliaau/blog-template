@@ -64,10 +64,8 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 <tr>
 <td markdown="span">**Host must enter a name**</td>
 <td markdown="span">
-	<ol>
-		<li>Select game button opens a popup that prompts a name input.</li>
-		<li>Only allow “Create Room” button to be clickable if the name input is at least 1 character long.</li>
-	</ol>
+		- Select game button opens a popup that prompts a name input.<br>
+		- Only allow “Create Room” button to be clickable if the name input is at least 1 character long.<br>
 </td>
 </tr>
 </tbody>
