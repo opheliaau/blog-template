@@ -41,17 +41,20 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 
 <table>
 <colgroup>
-<col width="30%" />
-<col width="70%" />
+<col width="20%" />
+<col width="20%" />
+<col width="60%" />
 </colgroup>
 <thead>
 <tr class="header">
+<th>User Action</th>
 <th>Functional Requirement</th>
-<th>Implementation Component</th>
+<th>Implementation Unit</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td markdown="span" rowspan="3">Select a Game</td>
 <td markdown="span">**Allow host to select a game**</td>
 <td markdown="span">
 		- Create a “Select Game” button under the game title.<br>
@@ -64,6 +67,14 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 <td markdown="span">
 		- Select game button opens a popup that prompts a name input.<br>
 		- Only allow “Create Room” button to be clickable if the name input is at least 1 character long.<br>
+</td>
+</tr>
+<tr>
+<td markdown="span">**Go to game lobby**</td>
+<td markdown="span">
+		- When the button on the name input popup (Create Room”) is clicked, the host is redirected to the game lobby.<br>
+		- There must be at least one character in the name input before allowing “Create Room” to be clickable.<br>
+		- When “Create Room” is clicked, the user’s info (player name) is saved.<br>
 </td>
 </tr>
 </tbody>
