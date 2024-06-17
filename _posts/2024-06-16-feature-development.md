@@ -39,7 +39,7 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 |--------|---------|
 |Allow host to select a game|Create a “Select Game” button under the game title. Only allow the player to select the game if the player owns the game. If they don’t own any games, redirect them to the games shop.|
 
-<table>
+<table style="vertical-align:top">
 <colgroup>
 <col width="20%" />
 <col width="20%" />
@@ -123,7 +123,6 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 <td markdown="span">
 	- Do not navigate to or create a game lobby if the code does not already exist.<br>
 	- Provide the user with an alert that the room code is not valid.<br>
-
 </td>
 </tr>
 <tr>
@@ -131,7 +130,6 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 <td markdown="span">
 	- Do not navigate to a game lobby that is already has the required/max number of players.<br>
 	- Provide user with an alert that the room is full.<br>
-
 </td>
 </tr>
 <tr>
@@ -139,7 +137,42 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 <td markdown="span">
 	- Only allow “Join Game” button to be clickable if the name input is at least 1 character long.<br>
 	- The user’s info (player name) is saved when they click on “Join Game” and associated to the specific game they joined.<br>
+</td>
+</tr>
 
+<tr>
+<td markdown="span" rowspan="3" style="vertical-align:top">**Leave a room**</td>
+<td markdown="span">When a player leaves the room, they no longer appear in the room screen</td>
+<td markdown="span">
+	- Indicate whether the player is in or out of the game room in the database.<br>
+	- Ensure game lobby includes only those who are in the game room.<br>
+	- Maintain the order of players.<br>
+	- Do not display gaps in the list of players in the game lobby.<br>
+
+</td>
+</tr>
+<tr>
+<td markdown="span">The leaving player’s assigned character is freed to be assigned to a new player</td>
+<td markdown="span">
+	- Ignore an exited player’s character when assigning a character to a new player.<br>
+</td>
+</tr>
+<tr>
+<td markdown="span">Cannot join a room that is full</td>
+<td markdown="span">
+	- Change the leaving player’s host status to no.<br>
+	- Update the second player by room join time to be the host.<br>
+
+</td>
+</tr>
+
+<tr>
+<td markdown="span" style="vertical-align:top">**Rejoin a room**</td>
+<td markdown="span">Allow players to rejoin the room if they drop part way through the game, and retain their progress</td>
+<td markdown="span">
+	- If rejoined to the game lobby, add them to the bottom of the existing player list, not their original position.<br>
+	- Do not assign a character that has already been assigned to someone else during their absence from the room.<br>
+	- Keep all existing data relating to their game (e.g. clues obtained) progress so it will remain when they rejoin.<br>
 </td>
 </tr>
 
