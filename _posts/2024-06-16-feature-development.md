@@ -47,9 +47,9 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 </colgroup>
 <thead>
 <tr class="header">
-<th>User Action</th>
-<th>Functional Requirement</th>
-<th>Implementation Unit</th>
+<th>User Actions</th>
+<th>Functional Requirements</th>
+<th>Implementation Units</th>
 </tr>
 </thead>
 <tbody>
@@ -92,9 +92,9 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 <tr>
 <td markdown="span" style="vertical-align:top">Show who is in the room lobby</td>
 <td markdown="span" style="vertical-align:top">
-	- Game lobby dynamically updates when a new player joins the room with the new player’s name<br>
-	- New players are added in order<br>
-	- Show when the game is full and prompt to fill the room when it is not full<br>
+	- Game lobby dynamically updates when a new player joins the room with the new player’s name.<br>
+	- New players are added in order.<br>
+	- Show when the game is full and prompt to fill the room when it is not full.<br>
 </td>
 </tr>
 <tr>
@@ -106,7 +106,7 @@ To illustrate a bit of the thinking that goes into each part of the app, here’
 <tr>
 <td markdown="span" style="vertical-align:top">Multiple games can take place simultaneously without interfering with each other</td>
 <td markdown="span" style="vertical-align:top">
-		- Any data references to players must use the unique game code<br>
+		- Any data references to players must use the unique game code.<br>
 </td>
 </tr>
 
